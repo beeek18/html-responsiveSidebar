@@ -1,4 +1,4 @@
-<h1> html-responsiveSidebar 🗂️
+<h1> Responsive sidebar 🗂️
 
 <h4>
 <li>JS
