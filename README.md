@@ -3,3 +3,4 @@
 <h4>
 <li>JS
 <li>CSS
+<li>Light and Dark mode

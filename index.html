@@ -2,50 +2,155 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="icon" type="image/x-icon" href="./responsiveSidebar.ico" />
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet" />
   <title>Responsive Sidebar</title>
-  <link rel="stylesheet" href="./style.css">
-  <link rel="icon" type="image/x-icon" href="./responsiveSidebar.ico">
 </head>
 
 <body>
+  <nav class="sidebar close">
+    <header>
+      <div class="image-text">
+        <span class="image">
+          <img src="./responsiveSidebar.ico" alt="logo" />
+        </span>
 
-  <div class="app">
+        <div class="text header-text">
+          <span class="name">beeek18</span>
+          <span class="profession">Web developer</span>
+        </div>
+      </div>
 
-    <div class="menu-toggle">
-      <div class="hamburger">
-        <span></span>
+      <i class="bx bx-chevron-right toggle"></i>
+    </header>
+
+    <div class="menu-bar">
+      <div class="menu">
+        <li class="search-box">
+          <i class="bx bx-search icon"></i>
+          <input type="search" placeholder="Search..." />
+        </li>
+
+        <ul class="menu-links">
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-home-alt icon"></i>
+              <span class="text nav-text">Dashboard</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-bar-chart-alt-2 icon"></i>
+              <span class="text nav-text">Revenue</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-bell icon"></i>
+              <span class="text nav-text">Notifications</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-pie-chart-alt icon"></i>
+              <span class="text nav-text">Analytics</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-heart icon"></i>
+              <span class="text nav-text">Likes</span>
+            </a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">
+              <i class="bx bx-wallet icon"></i>
+              <span class="text nav-text">Wallets</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bottom-content">
+        <li class="nav-link">
+          <a href="#">
+            <i class="bx bx-log-out icon"></i>
+            <span class="text nav-text">Logout</span>
+          </a>
+        </li>
+
+        <li class="mode">
+          <div class="sun-moon">
+            <i class="bx bx-moon icon moon"></i>
+            <i class="bx bx-sun icon sun"></i>
+          </div>
+
+          <span class="mode-text text"> Dark Mode</span>
+
+          <div class="toggle-switch">
+            <span class="switch"></span>
+          </div>
+        </li>
       </div>
     </div>
+  </nav>
 
-    <aside class="sidebar">
-      <h3>Menu</h3>
-      <nav class="menu">
-        <a href="#" class="menu-item is-active">Home</a>
-        <a href="#" class="menu-item">About</a>
-        <a href="#" class="menu-item">Portfolio</a>
-        <a href="#" class="menu-item">Contact</a>
-      </nav>
-    </aside>
+  <section class="home">
+    <div class="text">Responsive Sidebar</div>
 
-    <main class="content">
-      <h1>Responsive Sidebar</h1>
-      <p>Check it</p>
-    </main>
+    <div class="text-p">
+      <b>Responsive web design (RWD)</b> or <b>responsive design</b> is an
+      approach to web design that aims to make web pages render well on a
+      variety of devices and window or screen sizes from minimum to maximum
+      display size to ensure usability and satisfaction. <br /><br />
 
-  </div>
+      A responsive design adapts the web-page layout to the viewing
+      environment by using techniques such as fluid proportion-based grids,
+      flexible images, and CSS3 media queries, an extension of the @media
+      rule, in the following ways: <br /><br />
 
-  <script>
-    const menu_toggle = document.querySelector('.menu-toggle')
-    const sidebar = document.querySelector('.sidebar')
+      The fluid grid concept calls for page element sizing to be in relative
+      units like percentages, rather than absolute units like pixels or
+      points. <br /><br />
+      Flexible images are also sized in relative units, so as to prevent them
+      from displaying outside their containing element. <br /><br />
+      Media queries allow the page to use different CSS style rules based on
+      characteristics of the device the site is being displayed on, e.g. width
+      of the rendering surface (browser window width or physical display
+      size). <br /><br />
+      Responsive layouts automatically adjust and adapt to any device screen
+      size, whether it is a desktop, a laptop, a tablet, or a mobile phone.
+      <br /><br />
+      Responsive web design became more important as users of mobile devices
+      came to account for the majority of website visitors. In 2015, for
+      instance, Google announced Mobilegeddon and started to boost the page
+      ranking of mobile-friendly sites when searching from a mobile device.
+      <br /><br />
 
-    menu_toggle.addEventListener('click', () => {
-      menu_toggle.classList.toggle('is-active')
-      sidebar.classList.toggle('is-active')
-    })
-  </script>
+      Responsive web design is an example of user interface plasticity.
+      <br /><br />
+
+      <b>Mobile first, unobtrusive JavaScript, and progressive enhancement</b>
+      <br /><br />
+      <b>Mobile-first design</b> and progressive enhancement are related
+      concepts that predate RWD. Browsers of basic mobile phones do not
+      understand JavaScript or media queries, so a recommended practice was to
+      create a basic web site and enhance it for smartphones and personal
+      computers, rather than rely on graceful degradation to make a complex,
+      image-heavy site work on mobile phones.
+    </div>
+  </section>
+
+  <script src="./app.js"></script>
 </body>
 
 </html>
