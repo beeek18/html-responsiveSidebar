@@ -3,4 +3,5 @@
 <h4>
 <li>JS
 <li>CSS
+<li>Mobile adaptation 
 <li>Light and Dark mode
